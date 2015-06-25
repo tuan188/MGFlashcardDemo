@@ -21,21 +21,18 @@ class CardViewController: UITableViewController {
     
     weak var delegate: CardViewControllerDelegate?
     
-    var card: CardDto? {
-        didSet {
-            if let card = card {
-                self.title = "Edit Card"
-                frontTextField.text = card.front
-                backTextField.text = card.back
-            }
-            
-        }
-    }
+    var card: CardDto?
     
     let cardService = CardService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let card = card {
+            self.title = "Edit Card"
+            frontTextField.text = card.front
+            backTextField.text = card.back
+        }
         
         frontTextField.becomeFirstResponder()
     }

@@ -58,6 +58,7 @@ class CardListViewController: UITableViewController, CardViewControllerDelegate 
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let card = cards[indexPath.row]
+        self.performSegueWithIdentifier("addCard", sender: card)
     }
 
    
@@ -67,6 +68,9 @@ class CardListViewController: UITableViewController, CardViewControllerDelegate 
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
+            let card = cards[indexPath.row]
+            cardService.deleteCardByCardId(card.id)
+            cards.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
     }
