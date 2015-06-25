@@ -22,6 +22,10 @@
 		17E116591B3BA189008731C6 /* DeckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E116581B3BA189008731C6 /* DeckService.swift */; };
 		17E1165B1B3BA196008731C6 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E1165A1B3BA196008731C6 /* Mapper.swift */; };
 		17E1165F1B3BA1AD008731C6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17E1165D1B3BA1AD008731C6 /* Model.xcdatamodeld */; };
+		17E116611B3BAB35008731C6 /* CardDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E116601B3BAB35008731C6 /* CardDto.swift */; };
+		17E116631B3BAD8F008731C6 /* DeckDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E116621B3BAD8F008731C6 /* DeckDto.swift */; };
+		17E116661B3BAFB2008731C6 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E116651B3BAFB2008731C6 /* Card.m */; };
+		17E116691B3BAFB3008731C6 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E116681B3BAFB3008731C6 /* Deck.m */; };
 		583DED6C37A81D3C039233CE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F26EA8C3602740470F43185 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +60,12 @@
 		17E116581B3BA189008731C6 /* DeckService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckService.swift; sourceTree = "<group>"; };
 		17E1165A1B3BA196008731C6 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		17E1165E1B3BA1AD008731C6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		17E116601B3BAB35008731C6 /* CardDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDto.swift; sourceTree = "<group>"; };
+		17E116621B3BAD8F008731C6 /* DeckDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckDto.swift; sourceTree = "<group>"; };
+		17E116641B3BAFB2008731C6 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		17E116651B3BAFB2008731C6 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		17E116671B3BAFB3008731C6 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		17E116681B3BAFB3008731C6 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		1F26EA8C3602740470F43185 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EAE94F3E5CC594B3940002 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FF69677BD457EFDB2180A190 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,14 +113,14 @@
 		1765B34D1B3A82CE00B3FF0A /* MGFlashcardDemo */ = {
 			isa = PBXGroup;
 			children = (
-				17E1165C1B3BA19C008731C6 /* Models */,
-				17E116441B3B9D9E008731C6 /* Services */,
-				17E116431B3B9D9A008731C6 /* UI */,
+				17E1163F1B3B9317008731C6 /* MGFlashcardDemo-Bridging-Header.h */,
 				1765B3501B3A82CE00B3FF0A /* AppDelegate.swift */,
 				1765B3591B3A82CF00B3FF0A /* Images.xcassets */,
 				1765B35B1B3A82CF00B3FF0A /* LaunchScreen.xib */,
+				17E1165C1B3BA19C008731C6 /* Models */,
+				17E116441B3B9D9E008731C6 /* Services */,
 				1765B34E1B3A82CE00B3FF0A /* Supporting Files */,
-				17E1163F1B3B9317008731C6 /* MGFlashcardDemo-Bridging-Header.h */,
+				17E116431B3B9D9A008731C6 /* UI */,
 			);
 			path = MGFlashcardDemo;
 			sourceTree = "<group>";
@@ -192,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				17E116581B3BA189008731C6 /* DeckService.swift */,
+				17E116621B3BAD8F008731C6 /* DeckDto.swift */,
 			);
 			name = Decks;
 			sourceTree = "<group>";
@@ -200,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				17E116561B3BA17D008731C6 /* CardService.swift */,
+				17E116601B3BAB35008731C6 /* CardDto.swift */,
 			);
 			name = Cards;
 			sourceTree = "<group>";
@@ -208,6 +220,10 @@
 			isa = PBXGroup;
 			children = (
 				17E1165D1B3BA1AD008731C6 /* Model.xcdatamodeld */,
+				17E116671B3BAFB3008731C6 /* Deck.h */,
+				17E116681B3BAFB3008731C6 /* Deck.m */,
+				17E116641B3BAFB2008731C6 /* Card.h */,
+				17E116651B3BAFB2008731C6 /* Card.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -369,11 +385,15 @@
 				17E116491B3B9ECF008731C6 /* SM2.swift in Sources */,
 				17E116461B3B9DC1008731C6 /* SchedulingAlgorithm.swift in Sources */,
 				17E1165B1B3BA196008731C6 /* Mapper.swift in Sources */,
+				17E116661B3BAFB2008731C6 /* Card.m in Sources */,
 				17E1164F1B3BA0B1008731C6 /* CardViewController.swift in Sources */,
 				1765B3511B3A82CE00B3FF0A /* AppDelegate.swift in Sources */,
 				17E116591B3BA189008731C6 /* DeckService.swift in Sources */,
 				17E116511B3BA104008731C6 /* DeckViewController.swift in Sources */,
+				17E116691B3BAFB3008731C6 /* Deck.m in Sources */,
+				17E116611B3BAB35008731C6 /* CardDto.swift in Sources */,
 				17E1165F1B3BA1AD008731C6 /* Model.xcdatamodeld in Sources */,
+				17E116631B3BAD8F008731C6 /* DeckDto.swift in Sources */,
 				17E116571B3BA17D008731C6 /* CardService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
