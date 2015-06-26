@@ -41,6 +41,5 @@ class CardDto: NSObject {
     
     
     var deck: DeckDto!
-    
    
 }

@@ -17,6 +17,9 @@ class CardListViewController: UITableViewController, CardViewControllerDelegate 
         super.viewDidLoad()
 
         loadCards()
+        
+        let testSM2 = TestSM2()
+        testSM2.testIntervals()
     }
     
     private func loadCards() {

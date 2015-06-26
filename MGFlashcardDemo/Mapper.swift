@@ -75,7 +75,4 @@ class Mapper: NSObject {
         mapDeck(deck, toDeckDto: deckDto)
         return deckDto
     }
-    
-    
-   
 }

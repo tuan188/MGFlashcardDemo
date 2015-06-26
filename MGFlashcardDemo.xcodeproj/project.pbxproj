@@ -12,6 +12,7 @@
 		1765B35A1B3A82CF00B3FF0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1765B3591B3A82CF00B3FF0A /* Images.xcassets */; };
 		1765B35D1B3A82CF00B3FF0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1765B35B1B3A82CF00B3FF0A /* LaunchScreen.xib */; };
 		1765B3691B3A82CF00B3FF0A /* MGFlashcardDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1765B3681B3A82CF00B3FF0A /* MGFlashcardDemoTests.swift */; };
+		17D7786E1B3BEF0000013341 /* TestSM2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D7786D1B3BEF0000013341 /* TestSM2.swift */; };
 		17E116461B3B9DC1008731C6 /* SchedulingAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E116451B3B9DC1008731C6 /* SchedulingAlgorithm.swift */; };
 		17E116491B3B9ECF008731C6 /* SM2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E116481B3B9ECF008731C6 /* SM2.swift */; };
 		17E1164D1B3BA0A6008731C6 /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E1164C1B3BA0A6008731C6 /* CardListViewController.swift */; };
@@ -49,6 +50,7 @@
 		1765B3621B3A82CF00B3FF0A /* MGFlashcardDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MGFlashcardDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1765B3671B3A82CF00B3FF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1765B3681B3A82CF00B3FF0A /* MGFlashcardDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGFlashcardDemoTests.swift; sourceTree = "<group>"; };
+		17D7786D1B3BEF0000013341 /* TestSM2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSM2.swift; sourceTree = "<group>"; };
 		17E1163F1B3B9317008731C6 /* MGFlashcardDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGFlashcardDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		17E116451B3B9DC1008731C6 /* SchedulingAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulingAlgorithm.swift; sourceTree = "<group>"; };
 		17E116481B3B9ECF008731C6 /* SM2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SM2.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				17E116451B3B9DC1008731C6 /* SchedulingAlgorithm.swift */,
 				17E116481B3B9ECF008731C6 /* SM2.swift */,
+				17D7786D1B3BEF0000013341 /* TestSM2.swift */,
 			);
 			name = SM;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				1765B3511B3A82CE00B3FF0A /* AppDelegate.swift in Sources */,
 				17E116591B3BA189008731C6 /* DeckService.swift in Sources */,
 				17E116511B3BA104008731C6 /* DeckViewController.swift in Sources */,
+				17D7786E1B3BEF0000013341 /* TestSM2.swift in Sources */,
 				17E116691B3BAFB3008731C6 /* Deck.m in Sources */,
 				17E116611B3BAB35008731C6 /* CardDto.swift in Sources */,
 				17E1165F1B3BA1AD008731C6 /* Model.xcdatamodeld in Sources */,

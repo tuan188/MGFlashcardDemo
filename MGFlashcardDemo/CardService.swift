@@ -56,6 +56,4 @@ class CardService: NSObject {
         }
         return cardDtos
     }
-    
-   
 }
