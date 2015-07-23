@@ -38,41 +38,11 @@ class Mapper: NSObject {
         cardDto.lapses = card.lapses.integerValue
         cardDto.front = card.front
         cardDto.back = card.back
-        
-        if card.deck != nil {
-            cardDto.deck = deckDtoFromDeck(card.deck)
-            cardDto.deckId = cardDto.deck.id
-        }
     }
     
     class func cardDtoFromCard(card: Card) -> CardDto {
         let cardDto = CardDto()
         mapCard(card, toCardDto: cardDto)
         return cardDto
-    }
-    
-    class func mapDeckDto(deckDto: DeckDto, toDeck deck: Deck) {
-        deck.id = deckDto.id
-        deck.creationTime = deckDto.creationTime
-        deck.modificationTime = deckDto.modificationTime
-        deck.title = deckDto.title
-    }
-    
-    class func mapDeck(deck: Deck, toDeckDto deckDto: DeckDto) {
-        deckDto.id = deck.id
-        deckDto.creationTime = deck.creationTime
-        deckDto.modificationTime = deck.modificationTime
-        deckDto.title = deck.title
-        
-        for card in deck.cards {
-            let cardDto = cardDtoFromCard(card as! Card)
-            deckDto.cards.append(cardDto)
-        }
-    }
-    
-    class func deckDtoFromDeck(deck: Deck) -> DeckDto {
-        let deckDto = DeckDto()
-        mapDeck(deck, toDeckDto: deckDto)
-        return deckDto
     }
 }

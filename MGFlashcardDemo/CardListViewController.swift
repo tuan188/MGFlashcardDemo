@@ -33,10 +33,6 @@ class CardListViewController: UITableViewController, CardViewControllerDelegate 
         self.performSegueWithIdentifier("addCard", sender: nil)
     }
     
-    @IBAction func onCreateDeckButtonClicked(sender: AnyObject) {
-        
-    }
-    
 
     // MARK: - Table view data source
 

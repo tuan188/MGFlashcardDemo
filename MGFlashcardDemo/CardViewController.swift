@@ -16,13 +16,13 @@ protocol CardViewControllerDelegate: class {
 class CardViewController: UITableViewController {
     
     @IBOutlet weak var frontTextField: UITextField!
-    
+
     @IBOutlet weak var backTextField: UITextField!
-    
+
     weak var delegate: CardViewControllerDelegate?
-    
+
     var card: CardDto?
-    
+
     let cardService = CardService()
 
     override func viewDidLoad() {
