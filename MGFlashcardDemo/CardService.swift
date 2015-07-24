@@ -45,15 +45,4 @@ class CardService: NSObject {
         return cardDtos
     }
     
-    func getAllCardsByDeckId(deckId: String) -> [CardDto] {
-        var cardDtos = [CardDto]()
-        
-        var predicate = NSPredicate(format: "deck.id = '\(deckId)'")
-        var cards = Card.MR_findAllWithPredicate(predicate)
-        
-        for card in cards {
-            cardDtos.append(Mapper.cardDtoFromCard(card as! Card))
-        }
-        return cardDtos
-    }
 }
